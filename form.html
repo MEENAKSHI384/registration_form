@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+    <script src="form.js"></script>
+</head>
+<body>
+    <form id="registrationForm" onsubmit="handlesubmit(evaent)">
+    <h1>Registration Form</h1>
+    <div class='container'>
+        First Name:<input type="text" placeholder="enter first name" required/><br/><br/>
+        Middle Name:<input type="text" placeholder="enter middle name" required/><br/><br/>
+        Last Name:<input type="text" placeholder="enter last name"/><br/><br/>
+        Address:<textarea placeholder="please enter your address" required></textarea><br/><br/>
+        Gender:
+        <input type="radio" value="m" name="gender"/>male
+        <input type="radio" value="f" name="gender"/>female
+        <input type="radio" value="o" name="gender"/>other
+        <br/><br/>
+        Date of Birth:
+        <input type="date" name="Date of Birth" required/><br/><br/>
+        State:
+        <select><option>Please select a state</option>
+            <option>Andhra Pradesh</option>
+            <option>Karnataka</option>
+            <option>Tamilnadu</option>
+            <option>Kerala</option>
+            <option>Gujarat</option>
+            <option>Madhya Pradesh</option>
+            <option>Rajasthan</option>
+            <option>Maharastra</option>
+            <option>Bihar</option>
+            <option>Haryana</option>
+            <option>Uttar Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Punjab</option>
+            <option>Odisha</option>
+            <option>Nagaland</option>
+            <option>Himachal Pradesh</option>
+            <option>West Bengal</option>
+            <option>Jharkhand</option>
+            <option>Sikkim</option>
+            <option>Goa</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Telangana</option>
+            <option>Uttarakhand</option>
+            <option>Chhattisgarh</option>
+            <option>Tripura</option>
+            <option>Gandhinagar</option>
+            <option>Manipur</option></select><br/><br/>
+        User name:
+        <input type="text" placeholder="enter user name" required/><br/><br/>
+        Phone Number:
+        <input type="number" placeholder="enter mobile number" required/><br/><br/>
+        Password:<input type="password" placeholder="enter password" required/><br/><br/>
+        Confirm Password:<input type="password" placeholder="enter confirm password" required/><br/><br/>
+        Email:
+        <input type="email" name="email" required/><br/><br/>
+        <input type="checkbox" required>I agree to the terms and conditions.<br/><br/>
+        <button class="registerbtn" type="submit">SUBMIT</button><br/><br/>
+        <button class="registerbtn" type="submit">RESET</button>
+    </form></div>
+    <div id="confirmationPage" style="display: none;">
+        <h1>Thank you for registrating!</h1>
+        <p>Your registration is confirmed.</p>
+    </div>
+</body>
+</html>
